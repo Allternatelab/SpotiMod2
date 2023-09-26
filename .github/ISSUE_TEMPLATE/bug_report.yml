@@ -1,0 +1,94 @@
+name: ❌ Bug report
+description: Report errors or unexpected behavior
+labels: ❌ bug
+body:
+- type: checkboxes
+  attributes:
+      label: 🧐 Have you read the FAQ and viewed similar issues?
+      description: Por favor leia o <a href="https://telegra.ph/SpotX-FAQ-09-19">FAQ</a>. Verifique também <a href="https://www.youtube.com/channel/UCL8ssJ6dcCofNZvWowEzLRQ">Meu Canal  no YT</a> porque seu problema pode já ter sido corrigido em alguma pergunta realizada por seguidores!
+      options:
+        - label: Eu ja visitei o canal
+          required: true
+        - label: Eu verifiquei no canal, se teve problemas iguais ao meu e nao encontrei respostas!
+          required: true
+        - label: Eu fiz uma instalação limpa do Mod All.ternate lab no Spotify como <a href="https://www.youtube.com/channel/UCL8ssJ6dcCofNZvWowEzLRQ">descrito nas perguntas frequentes no canal do youtube</a>
+          required: true  
+- type: markdown
+  attributes:
+    value: "###"    
+- type: input
+  id: lang_spoti
+  attributes:
+    label: País da sua conta
+    description: Você pode visualizar seu país na página da sua conta, no parágrafo <a href="https://www.spotify.com/account/">País ou região</a>.
+    placeholder: "e.g. Ukraine"
+  validations:
+    required: true 
+- type: markdown
+  attributes:
+    value: "###"     
+- type: dropdown
+  id: plan
+  attributes:
+    label: Qual é o seu plano NO Spotify?
+    description: Você pode visualizar seu plano contratado, na página da sua conta do Spotify, em <a href="https://www.spotify.com/account/">Your plan</a>.
+    options:
+      - Free
+      - Premium
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: "###"        
+- type: dropdown
+  id: spicetify
+  attributes:
+    label: Você tem o Spicetify, ou outro mod instalado?
+    description: <a href="https://spicetify.app/">Spicetify</a> é uma outra ferramenta de linha de comando parecida com o mod All.ternate lab, para personalizar o cliente Spotify.
+    options:
+      - "Yes"
+      - "No"
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: "###"       
+- type: textarea
+  attributes:
+    label: ℹ Computer information
+    description: |
+      - Spotify: e.g. <kbd>1.1.90.859.gf1bb1e36</kbd>
+        - No cliente Spotify aberto no canto superior esquerdo, clique em <kbd>•••</kbd> → <kbd>Help</kbd> → <kbd>About Spotify</kbd>
+      - Windows: e.g. <kbd>Windows 11 21H2 22000.527</kbd> 
+        - Press <kbd>Win</kbd> + <kbd>Pause/Break</kbd> para abrir a página da qual copiar.
+      - PowerShell: e.g. <kbd>5.1.19041.1200</kbd>
+        - In the Windows PowerShell console, type the following command <kbd>Get-Host | Select-Object Version</kbd>
+    placeholder: |
+        - Spotify: 
+        - Windows: 
+        - PowerShell:  
+    value: |
+        - Spotify: 
+        - Windows: 
+        - PowerShell: 
+    render: markdown   
+  validations:
+    required: true    
+- type: textarea
+  attributes:
+    label: 📝 Description
+    description: Liste as etapas para reproduzir o erro e detalhes sobre o que acontece e o que você esperava que acontecesse.
+    value: |
+      1.
+      2.
+      3.
+      ...
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 📸 Screenshots
+    description: Coloque aqui quaisquer capturas de tela do problema, se necessário!
+  validations:
+    required: false    
+    

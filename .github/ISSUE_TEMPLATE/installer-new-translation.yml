@@ -1,0 +1,88 @@
+name: 🌐 Installer translation
+description: Traduza o instalador para o seu idioma
+labels: 🌐 New translation
+body:
+- type: input
+  id: lang
+  attributes:
+    label: What language do you want to translate into?
+    description: Observe também se já existe algum adicionado <a href="https://www.youtube.com/channel/UCL8ssJ6dcCofNZvWowEzLRQ">languages</a>
+    placeholder: e.g. English 
+  validations:
+    required: true
+- type: input
+  id: langpowershell
+  attributes:
+    label: Enter language name in PowerShell
+    description: Digite o seguinte comando no terminal do PowerShell<kbd>$PSUICulture</kbd>, escreva a resposta na linha abaixo. Para que isso funcione, seu Windows deve estar neste idioma.
+    placeholder: e.g. en-US
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 📝 Translation strings
+    description: |
+      Agora você pode começar a traduzir as strings, algumas observacoes antes de começar:
+         - As strings de tradução começam após um sinal de igual = e são colocadas entre aspas, ou seja, traduza somente as strings depois do sinal = entre aspas, e nao retire as aspas.
+         - Existem variáveis antes do sinal de igual =, elas NÃO precisam ser traduzidas.
+         - Além disso, se você encontrar situações <kbd>{0}</kbd>, <kbd>{1}</kbd>, <kbd>[Y/N]</kbd> ou nomes de arquivos, basta simplesmente ignorá-los.
+        
+      Boa sorte na traducao. 
+    value: |
+      Welcome         = "
+╔════════════════════════════════════════════════╗
+║   ATENCAO - ESTE É UM PATCH DESENVOLVIDO POR   ║
+║ UM GRUPO EM QUE ALL.TERNATE LAB FAZ PARTE.     ║
+║ Cortesia para seguidores do canal All.ternate  ║
+║                                                ║
+║ Aguarde enquanto o sistema junta informacoes   ║
+║                                                ║
+║   NAO FECHE ESTA JANELA, MESMO SE DEMORAR...   ║
+╚════════════════════════════════════════════════╝"
+      Incorrect       = "Oops, an incorrect value,"
+      Incorrect2      = "enter again through "
+      Download        = "Error downloading"
+      Download2       = "Will re-request in 5 seconds..."
+      Download3       = "Error again"
+      Download4       = "Check your network settings and run the installation again"
+      Download5       = "Downloading Spotify"
+      StopScript      = "Script is stopped"
+      MsSpoti         = "The Microsoft Store version of Spotify has been detected which is not supported"
+      MsSpoti2        = "Uninstall Spotify Microsoft Store edition [Y/N]"
+      MsSpoti3        = "Automatically uninstalling Spotify MS..."
+      MsSpoti4        = "Uninstalling Spotify MS..."
+      Prem            = "Modification for premium account..."
+      OldV            = "Found outdated version of Spotify"
+      OldV2           = "Your Spotify {0} version is outdated, it is recommended to upgrade to {1}"
+      OldV3           = "Want to update ? [Y/N]"
+      AutoUpd         = "Automatic update to the recommended version"
+      DelOrOver       = "Do you want to uninstall the current version of {0} or install over it? Y [Uninstall] / N [Install Over]"
+      DelOld          = "Uninstalling old Spotify..."
+      NewV            = "Unsupported version of Spotify found"
+      NewV2           = "Your Spotify {0} version hasn't been tested yet, currently it's a stable {1} version"
+      NewV3           = "Do you want to continue with {0} version (errors possible) ? [Y/N]"
+      Recom           = "Do you want to install the recommended {0} version ? [Y/N]"
+      DelNew          = "Uninstalling an untested Spotify..."
+      DownSpoti       = "Downloading and installing Spotify"
+      DownSpoti2      = "Please wait..."
+      PodcatsOff      = "Off Podcasts"
+      PodcastsOn      = "On Podcasts"
+      PodcatsSelect   = "Do you want to disable podcasts, episodes and audiobooks from the main page? [Y/N]"
+      DowngradeNote   = "It is recommended to block because Spotify was downgraded"
+      UpdBlock        = "Spotify updates blocked"
+      UpdUnblock      = "Spotify updates are not blocked"
+      UpdSelect       = "Want to block Spotify updates? [Y/N]"
+      ModSpoti        = "Patching Spotify..."
+      Error           = "Error"
+      FileLocBroken   = "Location of Spotify files is broken, uninstall Spotify client and run the script again"
+      Spicetify       = "Spicetify detected, it must be installed after SpotX, open recommended actions in FAQ ? [Y/N]"
+      ExpSpotify      = "Experimental features operated by Spotify"
+      NoRestore       = "SpotX has already been installed, xpui.bak not found. `nPlease uninstall Spotify client and run Install.bat again"
+      InstallComplete = "installation completed"
+      HostInfo        = "Unwanted URLs found in hosts file"
+      HostBak         = "Backing up hosts.bak..."
+      HostDel         = "Trying to remove unwanted URLs from the original hosts file..."
+      HostError       = "Something went wrong while editing the hosts file, edit it manually or run the script as administrator" 
+    render: txt  
+  validations:
+    required: true        

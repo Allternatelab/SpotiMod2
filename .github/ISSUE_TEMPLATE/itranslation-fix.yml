@@ -1,0 +1,22 @@
+name: "🌐 Localization/Translation issue"
+description: Relate traduções incorretas.
+labels: 🌐 Fix translation 
+body:
+- type: textarea
+  attributes: 
+    label: ❌ Actual phrase(s)
+    placeholder: Do que se trata? Inclua uma captura de tela por gentileza, isso pode ser extremamente útil, ok?. 
+  validations:
+    required: true
+- type: textarea
+  attributes: 
+    label: ✔️ Expected phrase(s)
+    placeholder: O que era esperado?
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: ℹ Why is the current translation wrong
+    placeholder: Por que você acha que isso está incorreto?
+  validations:
+    required: true
