@@ -263,7 +263,7 @@ if ($psv -ge 7) {
 
 function CallLang($clg) {
 
-    $urlLang = "C:\ALLTERNATE\SPOTIFYMOD\scripts\installer-lang\$clg.ps1"
+    $urlLang = "https://github.com/Allternatelab/SpotiMod2/tree/PROJETOS/scripts/installer-lang\$clg.ps1"
     $ProgressPreference = 'SilentlyContinue'
     
     try {
@@ -287,7 +287,7 @@ $lang = CallLang -clg $langCode
 # Set variable 'ru'.
 if ($langCode -eq 'ru') { 
     $ru = $true
-    $urlru = "C:\ALLTERNATE\SPOTIFYMOD\patches\Augmented translation/ru.json"
+    $urlru = "https://github.com/Allternatelab/SpotiMod2/tree/PROJETOS/patches/Augmented%20translation/ru.json"
     $webjsonru = (Invoke-WebRequest -useb -Uri $urlru).Content | ConvertFrom-Json
 }
 
